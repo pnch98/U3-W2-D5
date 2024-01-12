@@ -67,7 +67,7 @@ const Details = () => {
               </div>
             </Col>
             <Col className="bg-banners p-2">
-              <div className="d-flex flex-column justify-content-between h-100 text-white ms-2 py-3">
+              <div className="h-100 text-white ms-2 py-3">
                 <div className="d-flex justify-content-between">
                   <h1 className="text-white mb-5">EpiWeather</h1>
                   <Link to={"/"} className="btn">
@@ -75,7 +75,7 @@ const Details = () => {
                   </Link>
                 </div>
                 <div>
-                  <div className="text-center">
+                  <div className="text-center mt-5">
                     <Link className="active btn rounded-pill" disabled>
                       Today
                     </Link>

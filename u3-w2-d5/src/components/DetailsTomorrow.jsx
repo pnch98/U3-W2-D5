@@ -7,8 +7,10 @@ const DetailsTomorrow = () => {
   const [cityWeather, setCityWeather] = useState(null);
   const [tomorrowList, setTomorrowList] = useState(null);
   const date = new Date();
+  date.setDate(date.getDate() + 1);
+  console.log(date);
   const month = date.getMonth() < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
-  const tomorrowDate = date.getFullYear() + "-" + month + "-" + (date.getDate() + 1);
+  const tomorrowDate = date.getFullYear() + "-" + month + "-" + date.getDate();
   console.log(tomorrowDate);
   const params = useParams();
   console.log(params);
@@ -70,7 +72,7 @@ const DetailsTomorrow = () => {
               </div>
             </Col>
             <Col className="bg-banners p-2">
-              <div className="d-flex flex-column justify-content-between h-100 text-white ms-2 py-3">
+              <div className="h-100 text-white ms-2 py-3">
                 <div className="d-flex justify-content-between">
                   <h1 className="text-white mb-5">EpiWeather</h1>
                   <Link to={"/"} className="btn">
@@ -78,7 +80,7 @@ const DetailsTomorrow = () => {
                   </Link>
                 </div>
                 <div>
-                  <div className="text-center">
+                  <div className="text-center mt-5">
                     <Link to={`/details/${params.lat}/${params.lon}`} className="btn rounded-pill">
                       Today
                     </Link>
