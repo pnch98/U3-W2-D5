@@ -1,0 +1,53 @@
+.sunny {
+  background-image: url("./data/imgs/sunny.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
+}
+.rainy {
+  background-image: url("./data/imgs/rainy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.stormy {
+  background-image: url("./data/imgs/stormy.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.cloudy {
+  background-image: url("./data/imgs/cloudy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.home {
+  background-image: linear-gradient(rgba(5, 1, 62, 255) 0%, rgba(208, 97, 104, 255) 50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.bg-home {
+  background-color: rgba(188, 208, 245, 0.247);
+  color: white;
+}
+.bg-row {
+  background-color: rgba(36, 79, 110, 0.484);
+}
+.bg-banners {
+  background-color: rgba(22, 48, 66, 0.484);
+}
+.topbar {
+  background-color: rgba(5, 1, 62, 255);
+}
+.darkhover:hover {
+  cursor: pointer;
+  background-color: rgba(12, 26, 36, 0.484);
+}
